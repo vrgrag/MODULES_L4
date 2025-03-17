@@ -1,0 +1,31 @@
+{
+  "name": "modules_l4",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/vrgrag/MODULES_L4#readme",
+  "bugs": {
+    "url": "https://github.com/vrgrag/MODULES_L4/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vrgrag/MODULES_L4.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+ "scripts": {
+  "start": "dotenv -e .env.development -- nodemon index.js",
+  "build": "dotenv -e .env.production -- nodemon index.js",
+  "deploy": "dotenv -e .env.domain -- nodemon index.js"
+}
+
+ ,
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "dotenv-cli": "^8.0.0",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
